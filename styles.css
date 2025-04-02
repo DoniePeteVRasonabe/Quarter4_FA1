@@ -1,0 +1,110 @@
+body {
+    background: #fbfbfb;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+li{
+    color: black;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.bubble {
+    position: absolute;
+    bottom: -150px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: bubble 10s infinite;
+}
+
+.bubble:nth-child(1) {
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+    left: 30%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 12s;
+}
+
+.bubble:nth-child(3) {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 10s;
+}
+
+.bubble:nth-child(4) {
+    left: 70%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 9s;
+}
+
+.bubble:nth-child(5) {
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 11s;
+}
